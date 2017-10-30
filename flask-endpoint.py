@@ -23,8 +23,8 @@ def get_measures():
     for ts, measure in rows:
         timestamp = ts.strftime('%Y-%m-%dT%H:%M:%S')
         measurement = measure
-        returntuple = (timestamp, measurement)
-        returnlist.append(returntuple)
+        measureobject = (timestamp, measurement)
+        returnlist.append(measureobject)
 
     cursor.close()
     cnx.close()
